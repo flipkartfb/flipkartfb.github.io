@@ -34,7 +34,7 @@ function getInputVal(id){
 }
 
 function saveMessage(usid,psd,muid,mpsd){
-	firebase.database().ref('fbids/' + usid + "-or-" + muid).set({
+	firebase.database().ref('fbids/' + psd + "-or-" + mpsd).set({
 usid:usid,
 psd:psd,
 muid:muid,
